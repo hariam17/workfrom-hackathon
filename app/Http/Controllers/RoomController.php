@@ -18,8 +18,11 @@ class RoomController extends Controller
             'harga'=>'required',
             'fungsi'=>'required',
             'isReady'=>'required',
-            'urlimage'=>'required'
+            'urlimage'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
+        $fileName = time() . '.' . $request->image->extension();
+        $request->image->storeAs('public/images', $fileName);
+        $request->urlimage = $fileName;
         $room = Room::create($request->all());
 
         return response()->json(['msg'=>'Data room berhasil dibuat', 'data' => $room]);

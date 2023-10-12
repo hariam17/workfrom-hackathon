@@ -36,3 +36,16 @@ Route::post('/addRoom', [App\Http\Controllers\RoomController::class, 'store']);
 Route::get('/room/{id}', [App\Http\Controllers\RoomController::class, 'show']);
 Route::put('/room/edit/{id}', [App\Http\Controllers\RoomController::class, 'update']);
 Route::delete('/room/delete/{id}', [App\Http\Controllers\RoomController::class, 'destroy']);
+
+//ROUTING API PAYMENTS
+Route::get('/payments', [App\Http\Controllers\PaymentController::class, 'index']);
+Route::post('/addPayment', [App\Http\Controllers\PaymentController::class, 'store']);
+Route::get('/payment/{id}', [App\Http\Controllers\PaymentController::class, 'show']);
+
+//ROUTING API CHATTING
+Route::get('/chatting/{fromUser}/{toUser}', [App\Http\Controllers\ChattingController::class, 'show']);
+Route::post('/chatting', [App\Http\Controllers\ChattingController::class, 'store']);
+
+//ROUTING API ROLE
+Route::get('/roles', [App\Http\Controllers\RoleController::class, 'index']);
+Route::post('/addRole', [App\Http\Controllers\RoleController::class, 'store']);

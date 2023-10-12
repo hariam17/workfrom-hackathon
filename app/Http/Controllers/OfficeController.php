@@ -41,8 +41,11 @@ class OfficeController extends Controller
             'provinsi'=>'required',
             'kota'=>'required',
             'jml_lantai'=>'required',
-            'urlimage'=>'required'
+            'urlimage'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
+        $fileName = time() . '.' . $request->image->extension();
+        $request->image->storeAs('public/images', $fileName);
+        $request->urlimage = $fileName;
         $office=Office::findOrFail($id);
         $office->update($request->all());
 
