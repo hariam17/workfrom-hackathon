@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
-    background-image: url('img/tes.jpg');
+    background-image: url('img/img-2.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -43,7 +43,7 @@
                     <h2>What do you want?</h2>
                 <br>
                 <h6>Customer : People who rents</h6>
-                <a class="fluid ui button" style="background: #49ff92" href="/signup/customer">Sign Up As Customer</a>
+                <a class="fluid ui button text-light" style="background: #49ff92" href="/signup/customer">Sign Up As Customer</a>
                 <br>
                 <h6>Building Owner : People who provide space</h6>
                 <a class="fluid ui green button" href="/signup/building_owner">Sign Up As Building Owner</a>

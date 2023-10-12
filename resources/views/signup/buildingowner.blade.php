@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
-            background-image: url('../img/tes.jpg');
+            background-image: url('../img/img-3.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh;

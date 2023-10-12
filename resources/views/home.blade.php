@@ -1,6 +1,6 @@
 @extends("template.app")
 @section("content")
-<section id="first-page-section">
+<section class="first-page-section">
     <div id="slides" class="carousel slide" data-ride="carousel">
         <!-- Indicators (optional) -->
         <ol class="carousel-indicators">

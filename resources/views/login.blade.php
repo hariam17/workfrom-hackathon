@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
-            background-image: url('img/tes.jpg');
+            background-image: url('img/img-1.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="text-center"><span>Don't have an account? &nbsp;</span><a href="../signup" style="color: #49ff92"> Sign Up</a></div>
+                <div class="text-center"><span>Don't have an account? &nbsp;</span><a href="../signup" style="color: #12f222"> Sign Up</a></div>
             </div>
         </div>
     </div>

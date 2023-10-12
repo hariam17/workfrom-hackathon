@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <style>
-        #first-page-section{
+        .first-page-section{
             padding-top: 10vh;
         }
         section{
@@ -37,38 +37,18 @@
             <span>
                 <ul class="navbar-nav mt-2 mt-lg-0 col-sm-12 offset-6">
                     <li class="nav-item active col col-sm-2 offset-2">
-                        <a class="nav-link" href="#">Beranda<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/">Beranda<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown col col-sm-2 offset-2">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Locations</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Action</a>
-                        </div>
+                        <a class="nav-link" href="/location">Location</a>
                     </li>
                     <li class="nav-item dropdown col col-sm-2 offset-2">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Use Case</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Action</a>
-                        </div>
+                        <a class="nav-link" href="/usecase">Use case</a>
                     </li>
                     <li class="nav-item dropdown col col-sm-2 offset-2">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Blog</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Action</a>
-                        </div>
+                        <a class="nav-link" href="/blog">Blog</a>
                     </li>
+
                 </ul>
             </span><span>
                 <div style="width: 50vw;"> </div>

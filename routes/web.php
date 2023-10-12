@@ -22,6 +22,12 @@ Route::get('/login', function () {
 Route::get('/signup', function () {
     return view('signup');
 });
+Route::get('/usecase', function () {
+    return view('usecase');
+});
+Route::get('/blog', function () {
+    return view('blog');
+});
 Route::get('/signup/customer', function () {
     return view('signup.customer');
 });
