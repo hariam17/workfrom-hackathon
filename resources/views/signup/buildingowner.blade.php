@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
-            background-image: url('img/tes.jpg');
+            background-image: url('../img/tes.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -18,6 +18,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        .form-group>input{
+            border: 2px solid grey;
+            border-radius: 10px;
         }
 
 
@@ -43,44 +47,39 @@
                 <h2>Login</h2>
                 <form method="POST" action="">
                     <div class="form-group">
-                        <div class="col-md-12" style="background: #49ff92;border-radius:80px">
-                            <div class="input-group" style="background: #49ff92;">
-                                <span class="input-group-text align-content-center" id="inputGroupPrepend2"
-                                    style="background: #49ff92;border:none"><img
-                                        src="{{ asset('img/icon/user_icon.png') }}" alt="user" width="15"
-                                        height="15"></span>
-                                <input type="text" class="form-control" id="inputUsername"
-                                    style="background: #49ff92;border:none" aria-describedby="inputGroupPrepend2"
-                                    placeholder="Username" required>
-                            </div>
-                        </div>
+                        <label for="">Company Name</label>
+                        <input type="text" class="form-control" name="companyname" id="companyname"
+                            aria-describedby="helpId" placeholder="Input your company name">
                     </div>
                     <div class="form-group">
-                        <div class="col-md-12" style="background: #49ff92;border-radius:80px">
-                            <div class="input-group" style="background: #49ff92;">
-                                <span class="input-group-text align-content-center" id="inputGroupPrepend2"
-                                    style="background: #49ff92;border:none"><img
-                                        src="{{ asset('img/icon/password_icon.png') }}" alt="pwd" width="15"
-                                        height="15"></span>
-                                <input type="password" class="form-control" id="inputPassword"
-                                    style="background: #49ff92;border:none" aria-describedby="inputGroupPrepend2"
-                                    placeholder="Password" required>
-                            </div>
-                        </div>
+                        <label for="">Full Name</label>
+                        <input type="text" class="form-control" name="fullname" id="fullname"
+                            aria-describedby="helpId" placeholder="Input your full name">
                     </div>
-                    <div class="text-right">
-                        <a href="#" style="color: #fd1d0d"><small>Forgot Password?</small></a>
-
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control" name="email" id="email"
+                            aria-describedby="helpId" placeholder="Input your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control" name="password" id="password"
+                            aria-describedby="helpId" placeholder="Input your password">
+                    </div>
+                    <div class="form-group">
+                        <label for="">WhatsApp Number</label>
+                        <input type="password" class="form-control" name="wanumber" id="wanumber"
+                            aria-describedby="helpId" placeholder="Input your whatsapp number">
                     </div>
                     <br>
                     <div class="ui centered grid text center">
                         <button type="submit" class="ten wide column fluid ui green button align text center"
-                            style="text-align: center;border-radius:80px;">Login</button>
+                            style="text-align: center;border-radius:80px;">Create Account</button>
                     </div>
                 </form>
                 <br>
                 <div class="ui horizontal divider">
-                    Or Login With
+                    Sign Up With
                 </div>
                 <div class="ui centered grid">
                     <div class="three wide column">
@@ -96,9 +95,11 @@
                         <a href="#" class=""><img src="{{ asset('img/icon/facebook_icon.png') }}"
                                 alt="" width="40" height="40"></a>
                     </div>
+
                 </div>
                 <br>
-                <div class="text-center"><span>Don't have an account? &nbsp;</span><a href="../signup" style="color: #49ff92"> Sign Up</a></div>
+                <div class="text-center"><span>Already have an account? &nbsp;</span><a href="../login" style="color: #49ff92">Login</a></div>
+
             </div>
         </div>
     </div>
