@@ -18,6 +18,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// ROUTING API AUTH
+Route::post('/register', [App\Http\Controllers\AuthController::class, 'register']);
+Route::post('/login', [App\Http\Controllers\AuthController::class, 'login']);
+Route::middleware('auth:sanctum')->post('/logout', [App\Http\Controllers\AuthController::class, 'logout']);
+
 // ROUTING API OFFICES
 Route::get('/offices', [App\Http\Controllers\OfficeController::class, 'index']);
 Route::post('/addOffice', [App\Http\Controllers\OfficeController::class, 'store']);
